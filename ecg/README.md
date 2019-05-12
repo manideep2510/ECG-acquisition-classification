@@ -54,7 +54,7 @@ python ecg/predict.py <dataset>.json <model>.hdf5
 replacing `<dataset>` with an actual path to the dataset and `<model>` with the
 path to the model.
 
-**This work and code is developed by the awsome team of Awni et al, StanfordML Group.**
+**This work and code is developed by the awesome team of Awni et al, StanfordML Group.**
 
 ## Citation and Reference
 
