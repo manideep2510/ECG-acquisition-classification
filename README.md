@@ -11,7 +11,7 @@ This project contain two parts,
 
 - [`ecg`](ecg) : This folder contains all the files for training and testing of the deep learning algorithm and this code will be used to classifiy the acquired signals.
 
-- [`arduino`](arduino) : Aurdino code for the 4th order Notch filter, displaying ECG signal in computer, calculating instantanious BPM, etc.
+- [`arduino.ino`](arduino.ino) : Aurdino code for the 4th order Notch filter, displaying ECG signal in computer, calculating instantanious BPM, etc.
 
 - [`classification.ipynb`](classification.ipynb) : Code to automaticaly create a file of the acquired ECG signal by reading from the serial moniter, convert that into required format and classify.
 
@@ -95,7 +95,7 @@ A 16x2 LCD display is connected to Arduino to display beats per minute(BPM).
 Single lead ECG detection using three electrodes was performed and the resulting ECG signal after passing through the cascade of the above filters was visualized using Arduino Serial plotter. Signal was sampled at a frequency of 500Hz. The entire circuit is assembled on a breadboard and powered through two 9v batteries making the prototype portable. Any abnormal heartbeat is indicated to the subject. The placement of electrodes also plays a role in the generation of different waves. We placed the positive electrode on the left hip, a negative electrode on the right shoulder and a electrode from the left hand wrist is given as a ground reference. This placement of electrodes is along the axis of heart alignment. Our observed ECG is 
 
 <p align="center">
-    <img src="photos/4.png" width="300" />
+    <img src="photos/signal.png" width="900" />
 </p>
 
 Here we take a look at each individual heartbeat, plotting all the 70 heartbeats in the sampled data (9000 data points) synchronized by their R peak, looks like below.
