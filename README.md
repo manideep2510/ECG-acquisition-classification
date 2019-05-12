@@ -29,11 +29,15 @@ The acquired ECG signal is used to monitor and display the heart rate in real ti
 
 - The T-wave represents the ventricular repolarization of the ventricles.
 
-**Image**
+<p align="center">
+    <img src="images/heart_cycle.png" width="900" />
+</p>
 
 ### Block Diagram
 
-**Image**
+<p align="center">
+    <img src="images/block_diagram.png" width="900" />
+</p>
 
 ### Discussions on Design with Illustrations; Circuit Connections
 
@@ -41,14 +45,18 @@ Single Channel acquisition is done with electrodes on both the arms which are us
 
 The bandwidth of a normal ECG is not very wide and the fundamental frequency is approximately 1 Hz. The harmonic content decreases until is practicably negligible beyond 60Hz however, the system higher cutoff frequency was fixed to be 150Hz as part of the QRS complex is lost if filtered at lower cutoff frequencies.
 
-**image**
+<p align="center">
+    <img src="images/Frequency-spectrum.png" width="900" />
+</p>
 
 ECG signal gets interfered by many artifacts which need to be filtered out. Main sources of noise in the ECG signal are Baseline wander (low-frequency noise), Power line  interference  
 ( 50Hz noise from a power line), Muscle noise (EMG interference) an electrical interference from other equipment. Various filters are used to remove these disturbances.
 
 To remove the common mode noise INA128U (Instrumentation Amplifier) was used having a high CMRR of 120db. The gain of the amplifier was set to 29 (so that output will be between +9 and -9)
 
-**Images**
+<p align="center">
+    <img src="images/4.png" width="900" />
+</p>
 
 To remove the baseline noise a high pass filter of cutoff frequency 0.05 Hz is used. A second order Butterworth filter was designed using opamp OPA27, a low noise amplifier to reduce noise amplification. The function of this filter is to eliminate the direct voltage in the signal and the resulting signal would be between + and - 5mv. 
 
