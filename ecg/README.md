@@ -3,21 +3,10 @@
 Clone the repository
 
 ```
-git clone git@github.com:awni/ecg.git
+git clone git@github.com:manideep2510/ECG-acquisition-classification.git
 ```
 
-If you don't have `virtualenv`, install it with
-
-```
-pip install virtualenv
-```
-
-Make and activate a new Python 2.7 environment
-
-```
-virtualenv -p python2.7 ecg_env
-source ecg_env/bin/activate
-```
+**Python 3.5 or higher is required to run the code. To test the code the with the pretrained models, Python 3.5 is the only one it supports**
 
 Install the requirements (this may take a few minutes).
 
@@ -64,6 +53,8 @@ python ecg/predict.py <dataset>.json <model>.hdf5
 
 replacing `<dataset>` with an actual path to the dataset and `<model>` with the
 path to the model.
+
+**This work and code is developed by the awsome team of Awni et al, StanfordML Group.**
 
 ## Citation and Reference
 
