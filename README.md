@@ -30,13 +30,13 @@ The acquired ECG signal is used to monitor and display the heart rate in real ti
 - The T-wave represents the ventricular repolarization of the ventricles.
 
 <p align="center">
-    <img src="photos/heart_cycle.png" width="900" />
+    <img src="photos/heart_cycle.png" width="400" />
 </p>
 
 ### Block Diagram
 
 <p align="center">
-    <img src="photos/block_diagram.png" width="900" />
+    <img src="photos/block_diagram.png" width="700" />
 </p>
 
 ### Discussions on Design with Illustrations; Circuit Connections
@@ -46,7 +46,7 @@ Single Channel acquisition is done with electrodes on both the arms which are us
 The bandwidth of a normal ECG is not very wide and the fundamental frequency is approximately 1 Hz. The harmonic content decreases until is practicably negligible beyond 60Hz however, the system higher cutoff frequency was fixed to be 150Hz as part of the QRS complex is lost if filtered at lower cutoff frequencies.
 
 <p align="center">
-    <img src="photos/Frequency-spectrum.png" width="900" />
+    <img src="photos/Frequency-spectrum.png" width="800" />
 </p>
 
 ECG signal gets interfered by many artifacts which need to be filtered out. Main sources of noise in the ECG signal are Baseline wander (low-frequency noise), Power line  interference  
@@ -55,20 +55,26 @@ ECG signal gets interfered by many artifacts which need to be filtered out. Main
 To remove the common mode noise INA128U (Instrumentation Amplifier) was used having a high CMRR of 120db. The gain of the amplifier was set to 29 (so that output will be between +9 and -9)
 
 <p align="center">
-    <img src="photos/4.png" width="900" />
+    <img src="photos/4.png" width="300" />
 </p>
 
 To remove the baseline noise a high pass filter of cutoff frequency 0.05 Hz is used. A second order Butterworth filter was designed using opamp OPA27, a low noise amplifier to reduce noise amplification. The function of this filter is to eliminate the direct voltage in the signal and the resulting signal would be between + and - 5mv. 
 
-**Images**
+<p align="center">
+    <img src="photos/1.png" width="300" />
+</p>
 
 An amplification stage with a gain of 41. This gives a total gain of 1255.
 
-**Images**
+<p align="center">
+    <img src="photos/3.png" width="300" />
+</p>
 
 A low pass filter with 3db bandwidth at 150 Hz. This ensures unwanted frequencies in the ECG spectrum to be filtered off.
 
-**Images**
+<p align="center">
+    <img src="photos/2.png" width="300" />
+</p>
 
 Power line interference(50 Hz) is a major design artifact. To remove this an Arduino(nano) was programmed to function as a second order IIR notch filter of 2Hz bandwidth. Cutoff frequencies are 48Hz and 52Hz. Coefficients are derived from Matlab.
 
@@ -88,12 +94,18 @@ A 16x2 LCD display is connected to Arduino to display beats per minute(BPM).
 
 Single lead ECG detection using three electrodes was performed and the resulting ECG signal after passing through the cascade of the above filters was visualized using Arduino Serial plotter. Signal was sampled at a frequency of 500Hz. The entire circuit is assembled on a breadboard and powered through two 9v batteries making the prototype portable. Any abnormal heartbeat is indicated to the subject. The placement of electrodes also plays a role in the generation of different waves. We placed the positive electrode on the left hip, a negative electrode on the right shoulder and a electrode from the left hand wrist is given as a ground reference. This placement of electrodes is along the axis of heart alignment. Our observed ECG is 
 
-**Image**
+<p align="center">
+    <img src="photos/4.png" width="300" />
+</p>
 
 Here we take a look at each individual heartbeat, plotting all the 70 heartbeats in the sampled data (9000 data points) synchronized by their R peak, looks like below.
 
-**Image**
+<p align="center">
+    <img src="photos/graph1.png" width="800" />
+</p>
 
 Here is the variation of Heart Rate throughout the sampled data,
 
-**Image**
+<p align="center">
+    <img src="photos/graph2.png" width="800" />
+</p>
