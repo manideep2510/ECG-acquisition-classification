@@ -30,7 +30,7 @@ The acquired ECG signal is used to monitor and display the heart rate in real ti
 - The T-wave represents the ventricular repolarization of the ventricles.
 
 <p align="center">
-    <img src="photos/heart_cycle.png" width="200" />
+    <img src="photos/heart_cycle.png" width="275" />
 </p>
 
 ### Block Diagram
