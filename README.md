@@ -1,4 +1,4 @@
-# ECG-acquisition-classification
+# Single Lead ECG Signal acquisition and classification using Deep Convolutional Networks
 Single Lead ECG signal Acquisition and Arrhythmia Classification using Deep Learning
 
 This project contain two parts,
@@ -15,7 +15,7 @@ This project contain two parts,
 
 - [`classification.ipynb`](classification.ipynb) : Code to automaticaly create a file of the acquired ECG signal by reading from the serial moniter, convert that into required format and classify.
 
-# About ECG Singnal Acquasition: Filters, Amplifiers, their circuits and their values
+## About ECG Singnal Acquasition: Filters, Amplifiers, their circuits and their values
 
 Electrocardiogram (ECG) is a recording - a graph of voltage versus time - of the electrical activity of the heart using electrodes placed on the skin. These electrodes detect the small electrical changes that are a consequence of cardiac muscle depolarization followed by repolarization during each cardiac cycle (heartbeat).
 
