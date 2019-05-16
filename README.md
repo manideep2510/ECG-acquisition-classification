@@ -109,3 +109,19 @@ Here is the variation of Heart Rate throughout the sampled data,
 <p align="center">
     <img src="photos/graph2.png" width="800" />
 </p>
+
+## About Classification of Arrhythmias from ECG Signals
+
+A 1D convolutional deep neural network is developed to detect arrhythmias in arbitrary length ECG time-series.
+
+A convolutional DNN is trained on [this dataset](https://physionet.org/challenge/2017/) to detect arrhythmias, which takes as input the raw ECG data (sampled at 300 Hz, or 300 samples per second) and outputs one prediction every 256 samples (or every 1.28 s), which is being called as the output interval. The network takes as input only the raw ECG samples and no other patient- or ECG-related features. The network architecture has 34 layers; to make the optimization of such a network tractable, we employed shortcut connections in a manner similar to the residual network architecture.
+
+Distinct from some other recent DNN approaches, no significant preprocessing of ECG data, such as Fourier or wavelet transforms, is needed to achieve strong classification performance.
+
+<p align="center">
+    <img src="photos/deepnet.png" width="200" />
+</p>
+
+You can download the single lead ECG signals for training here: https://physionet.org/challenge/2017/training2017.zip
+
+For detailed information please refer to [Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network](https://stanfordmlgroup.github.io/projects/ecg2/) by Awni Y. Hannun*, Pranav Rajpurkar*, Masoumeh Haghpanahi*, Geoffrey H. Tison*, Codie Bourn, Mintu P. Turakhia, Andrew Y. Ng.
