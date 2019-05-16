@@ -1,3 +1,5 @@
+### This work and code is developed by the awesome team of Awni et al, StanfordML Group. I have just modified it to work with python3 and few other changes for my comfort of use.
+
 ## Install 
 
 Clone the repository
@@ -12,6 +14,7 @@ Install the requirements (this may take a few minutes).
 
 For CPU only support run
 ```
+cd ecg
 ./setup.sh
 ```
 
@@ -53,8 +56,6 @@ python ecg/predict.py <dataset>.json <model>.hdf5
 
 replacing `<dataset>` with an actual path to the dataset and `<model>` with the
 path to the model.
-
-**This work and code is developed by the awesome team of Awni et al, StanfordML Group.**
 
 ## Citation and Reference
 
