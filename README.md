@@ -13,7 +13,7 @@ This project contain two parts,
 
 - [`arduino.ino`](arduino.ino) : Aurdino code for the 4th order Notch filter, displaying ECG signal in computer, calculating instantanious BPM, etc.
 
-- [`predict.py`](predict.py)*To be uploaded* : Code to automaticaly create a file of the acquired ECG signal by reading from the serial moniter, convert that into required format and classify.
+- [`predict.py`](predict.py)(*To be uploaded*) : Code to automaticaly create a file of the acquired ECG signal by reading from the serial moniter, convert that into required format and classify.
 
 ## About ECG Singnal Acquasition: Filters, Amplifiers, their circuits and their values
 
