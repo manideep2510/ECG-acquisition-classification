@@ -1,4 +1,4 @@
-### This work and code is developed by the awesome team of Awni et al, StanfordML Group. I have just modified it to work with python3 and few other changes for my comfort of use.
+##### This work and code is developed by the awesome team of Awni et al, StanfordML Group. I have just modified it to work with python3 and few other changes for my comfort of use.
 
 ## Install 
 
