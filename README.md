@@ -85,12 +85,17 @@ y = 0.6022 * x - 0.6022 * x1 + 0.6022 * x2 + 0.6022 * y1 - 0.2043 * y2;
 X is the output from the low pass filter.
 Y is the output from the notch filter.
 
-
 **Heart Rate Monitor:**
 
 The time interval between two high amplitude R waves (R-R Interval) is used to calculate the instantaneous heart rate. Thresholding was done in Arduino to detect the R peaks and thereby calculate heart rate.
 
 A 16x2 LCD display is connected to Arduino to display beats per minute(BPM).
+
+**Our Circuit**
+
+<p align="center">
+    <img src="images/circuit.jpg" width="500" />
+</p>
 
 ### Results
 
