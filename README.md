@@ -1,7 +1,7 @@
 # Single Lead ECG Signal acquisition and classification using Deep Convolutional Networks
 Single Lead ECG signal Acquisition and Arrhythmia Classification using Deep Learning
 
-Team Members: [Manideep Kolla](https://github.com/manideep2510), Durga Prasad, [Konda Chandu](https://github.com/kondachandu)
+Team Members: [Manideep Kolla](https://github.com/manideep2510), [Durga Prasad](https://github.com/durga-prasad1), [Konda Chandu](https://github.com/kondachandu)
 
 This project contain two parts,
 
