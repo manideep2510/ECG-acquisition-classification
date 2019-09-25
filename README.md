@@ -19,6 +19,14 @@ This project contain two parts,
 
 - [`val.json`](val.json) : Json file that specifies the path of the saved .mat file of the acquired signal. **Please change the path of the .mat filein this Json file for testing according to your present working directory**
 
+## Dependensies
+
+- [Tensorflow](http://tensorflow.org)
+
+- [Keras](http://keras.io)
+
+- [Arduino](https://www.arduino.cc)
+
 ## About ECG Singnal Acquasition: Filters, Amplifiers, their circuits and their values
 
 Electrocardiogram (ECG) is a recording - a graph of voltage versus time - of the electrical activity of the heart using electrodes placed on the skin. These electrodes detect the small electrical changes that are a consequence of cardiac muscle depolarization followed by repolarization during each cardiac cycle (heartbeat).
