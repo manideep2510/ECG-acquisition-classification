@@ -11,7 +11,7 @@ This project contain two parts,
 
 ## Files
 
-- [`ecg`](ecg) : This folder contains all the files for training and testing of the deep learning algorithm and this code will be used to classifiy the acquired signals.
+- [`ecg`](ecg) : This folder contains all the files for training and testing of the deep learning algorithm and this code will be used to classifiy the acquired signals. The code in this folder is developed by the awesome team of Awni et al, StanfordML Group. I have just modified it to work with python3 and few other changes for my comfort of use.
 
 - [`arduino.ino`](arduino.ino) : Aurdino code for the 4th order Notch filter, displaying ECG signal in computer, calculating instantanious BPM, etc.
 
